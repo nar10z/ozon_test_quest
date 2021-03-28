@@ -33,13 +33,11 @@ func (gi *gridInformation) convert() {
 		var g []*gridItem
 
 		for j, v2 := range v {
-			item := gridItem{
+			g = append(g, &gridItem{
 				value: v2,
 				x:     i,
 				y:     j,
-			}
-
-			g = append(g, &item)
+			})
 		}
 
 		gi.convertedGrid = append(gi.convertedGrid, g)

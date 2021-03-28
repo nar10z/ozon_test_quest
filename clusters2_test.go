@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestGetClustersQuantity(t *testing.T) {
+func TestGetClustersQuantity2(t *testing.T) {
 	type args struct {
 		grid [][]int
 	}
@@ -78,8 +78,8 @@ func TestGetClustersQuantity(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := GetClustersQuantity(tt.args.grid); got != tt.want {
-				t.Errorf("GetClustersQuantity() = %v, want %v", got, tt.want)
+			if got := GetClustersQuantity2(tt.args.grid); got != tt.want {
+				t.Errorf("GetClustersQuantity2() = %v, want %v", got, tt.want)
 			}
 		})
 	}
